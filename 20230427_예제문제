@@ -1,0 +1,116 @@
+/*#include <stdio.h>
+
+int main(void) {
+
+  double num1,num2,num3;
+  double sum, avg;
+
+  scanf("%lf %lf %lf",&num1,&num2,&num3);
+
+  sum=num1+num2+num3;
+  avg=num1+num2+num3;
+
+  printf("합계=%.2lf\n",sum);
+  printf("평균=%.2lf\n",avg);
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+
+  int n;
+  int i=1;
+
+  printf("출력하고 싶은 단 : ");
+  scanf("%d",&n);
+
+  while(i<=9){
+    printf("%d * %d = %d\n",n,i,n*i);
+    i++;
+
+  }
+
+}*/
+/*#include <stdio.h>
+
+int main(void) {
+  int i,n,sum;
+  i=1;
+  sum=0;
+  printf("정수를 입력하시오 : ");
+  scanf("%d",&n);
+  while(i<=n){
+    sum=sum+i;
+    i++;
+  }
+  printf("1부터 %d까지의 합은 %d입니다\n",n,sum);
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+  int i, a, hap;
+
+  i = 2, hap = 0;
+  printf("정수를 입력하시오 : ");
+  scanf("%d", &a);
+  while (i <= a) {
+    hap = hap + i;
+    i += 2;
+  }
+  printf("1부터의 %d까지의 짝수합은 %d입니다.", a,hap);
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+  int i,hap;
+  hap=0;
+  int a=0;
+  while(a<=4){
+    printf("값을 입력하시오 : ");
+    scanf("%d",&i);
+    a++;
+    hap=hap+i;
+  }
+  printf("합계는 %d입니다.",hap);
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+  int number,sum =0;
+
+  do{
+    printf("정수를 입력하시오 : ");
+    scanf("%d",&number);
+    sum+=number;
+  }while(number!=0);
+  printf("숫자들의 합 = %d\n",sum);
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+  int i;
+
+  do {
+    printf("1---새로만들기\n");
+    printf("2---파일열기\n");
+    printf("3---파일닫기\n");
+  } while (i < 1 || i > 3);
+  
+  printf("하나를 선택하시요 : ");
+  scanf("%d", &i);
+  printf("선택된 메뉴 = %d", i);
+}*/
+
+#include<stdio.h>
+
+int main(){
+  hap=0;
+  for(int i=0;i<10;i++){
+    hap=hap+i;
+  }
+  printf("1부터 10끼자의 정수의 합 = %d",hap);
+}
