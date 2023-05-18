@@ -33,3 +33,52 @@ int main() {
     break;
   }
 }
+
+
+
+#include <stdio.h>
+
+int main() {
+
+  int socres[5] = {10, 20, 30, 40, 50};
+  for (int i = 0; i <= 4; i++) {
+    printf("scores[%d] = %d\n", i, socres[i]);
+  }
+}
+
+
+#include <stdio.h>
+
+int main() {
+  int a[5];
+  int o;
+  int vud = 0;
+  int hap = 0;
+
+  for (int i = 0; i <= 4; i++) {
+    printf("학생들의 성적을 입력하시오: ");
+    scanf("%d", &o);
+
+    a[i] = o;
+    hap = hap + o;
+
+    vud = hap / 5;
+  }
+  printf("평균 : %d", vud);
+}
+
+#include <stdio.h>
+#define SIZE 3
+
+int main() {
+  int scores[] = {
+      1, 2, 3, 4, 5, 6,
+  };
+  int i, size;
+
+  size = sizeof(scores) / sizeof(scores[0]);
+
+  for (i = 0; i < size; i++) {
+    printf("%d", scores[i]);
+  }
+}
